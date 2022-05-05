@@ -2,7 +2,7 @@ var express = require('express');
 var https = require('https');
 const fs = require("fs");
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://marck28:<password>@cluster0.nf2l6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://marck28:Travel012095@cluster0.nf2l6.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 client.connect(err => {
   const collection = client.db("test").collection("devices");
