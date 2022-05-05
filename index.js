@@ -34,3 +34,5 @@ https.createServer(options, (req, res) => {
     res.writeHead(200);
     res.end('Server listening on port ' + port);
 }).listen(port);
+
+run().catch(console.dir);
