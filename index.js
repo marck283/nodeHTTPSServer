@@ -8,8 +8,8 @@ app.get("/", (req, res) => {
 });
 
 const options = {
-    key: fs.readFileSync('test/fixtures/keys/agent2-key.pem'),
-    cert: fs.readFileSync('test/fixtures/keys/agent2-cert.pem')
+    key: fs.readFileSync('server-key.pem'),
+    cert: fs.readFileSync('cert.pem')
 };
 
 https.createServer(options, (req, res) => {
