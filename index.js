@@ -17,6 +17,10 @@ app.get("/", (req, res) => {
     console.log("GET request received on port " + port);
 });
 
+app.post("/", (req, res) => {
+    console.log("POST request received on port " + port);
+});
+
 const options = {
     key: fs.readFileSync('server-key.pem'),
     cert: fs.readFileSync('cert.pem')
