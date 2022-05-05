@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var https = require('https');
 var port = 8000;
+const fs = require("fs");
 
 app.get("/", (req, res) => {
     console.log("GET request received on port " + port);
